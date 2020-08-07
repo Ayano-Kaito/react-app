@@ -13,40 +13,25 @@
 <script type="text/babel">
     let dom = document.querySelector('#root');
 
-    const p = {
+    const msg = {
         fontSize: "20pt",
+        fontWeight:"bold",
         padding: "10px",
+        color:"white",
+        backgroundColor:"darkblue"
     };
-    const input = {
-        fontSize: "16pt",
-        padding: "5px 10px",
-    }
-
-    let message = 'お名前をどうぞ：';
-    let in_val = '';
-
-    let doChange = (event)=>{
-        in_val = event.target.value;
-        message = 'こんにちは, ' + in_val + 'さん！！';
+    
+    function Welcome(props) {
+        return <p style={msg}>Hello React!!</p>;
     };
 
-    let doAction = (event)=>{
-        let el = (
-            <div>
-                <p style={p}>{message}</p>
-                <div>
-                    <input type="text" id="input" style={input}
-                        onChange={doChange} />
-                    <button  onClick={doAction} style={input}>
-                        Click
-                    </button>
-                </div>
-            </div>
-        );
-        ReactDOM.render(el, dom);
-    };
-
-    doAction();
+    let el = (
+    <div>
+        <Welcome />
+    </div>
+    );
+    
+    ReactDOM.render(el, dom);
 
 </script>
 </body>
