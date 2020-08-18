@@ -6,11 +6,16 @@
 
 <script>
 
-let ob = {red:255, green:215, blue:0};
-document.write('<p>RED: ' + ob.red + '</p>');
-document.write('<p>GREEN: ' + ob.green + '</p>');
-document.write('<p>BLUE: ' + ob.blue + '</p>');
+let ob = {
+    red:255, green:215, blue:0,
+    print: function() {
+        document.write('<p>RED: ' + ob.red + '</p>');
+        document.write('<p>GREEN: ' + ob.green + '</p>');
+        document.write('<p>BLUE: ' + ob.blue + '</p>');
+    }
+};
 
+ob.print();
 </script>
 </body>
 </html>
