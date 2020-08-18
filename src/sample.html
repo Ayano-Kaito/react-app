@@ -2,15 +2,15 @@
 <html lang="ja">
 <head><title>Sample</title></head>
 <body>
-    <h1>Index</h1>
+<h1>Index</h1>
 
 <script>
-    function hello(getName, name) {
-        document.write('<p>こんにちは、' + getName(name) + 'さん！ </p>');
-    }
 
-hello((name) => { return '<b>' + name + '</b>'; }, 'たろう');
-hello((name) => '<<<' + name + '>>>', '花子');
+let ob = {red:255, green:215, blue:0};
+document.write('<p>RED: ' + ob.red + '</p>');
+document.write('<p>GREEN: ' + ob.green + '</p>');
+document.write('<p>BLUE: ' + ob.blue + '</p>');
+
 </script>
 </body>
 </html>
