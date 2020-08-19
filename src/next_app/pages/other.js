@@ -16,10 +16,10 @@ const p = {
 
 export default () => <div>
     <h1 style={h1}>Next.js</h1>
-    <p style={p}>Welcome to next.js!</p>
+    <p style={p}>This is Other page.</p>
     <hr />
     <div>
-        <Link href="/other">
+        <Link href="/">
             <a>Go to other page &gt;&gt;</a>
         </Link>
     </div>
